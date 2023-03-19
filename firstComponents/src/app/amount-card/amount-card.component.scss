@@ -1,0 +1,39 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .green {
+        color: green;
+    }
+
+    .blue {
+        color: blue;
+
+    }
+
+    #icon {
+        display: block;
+        height: 50px;
+        margin: 15px 5px 3px 3px;
+    }
+
+    #cardMenu {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding: 1vh;
+        margin: -1vh;
+    }
+
+    #menuDots {
+        margin-right: 13px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: black;
+        box-shadow: 5px 0px 0px black, 10px 0px 0px black;
+
+    }
+}

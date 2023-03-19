@@ -1,0 +1,14 @@
+:host {
+    display: block;
+    width: 100vh;
+    border-style: solid;
+    border-width:2px;
+    border-color: black;
+    margin: 20px;
+
+    .content {
+        display: block;
+        top: 50%;
+        left: 50%;
+    }
+}
