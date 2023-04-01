@@ -1,0 +1,26 @@
+:host {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 50px;
+
+    #formattingTable {
+        border: solid 2px black;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+    }
+
+    #formattingPreview {
+        border: solid 2px black;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #cssBoard {
+        border: solid 2px black;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+}

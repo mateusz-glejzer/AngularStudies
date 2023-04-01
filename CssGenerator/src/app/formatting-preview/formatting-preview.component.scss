@@ -1,0 +1,23 @@
+:host {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    label {
+        padding: 15px
+    }
+
+    #title {
+        grid-column: 1 / 2;
+    }
+
+    #textLabel {
+        grid-column: 1 / 2;
+    }
+
+    #htmlBlock {
+        grid-column: 1 / 3;
+    }
+}
