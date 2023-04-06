@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-generated-css-board',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./generated-css-board.component.scss']
 })
 export class GeneratedCssBoardComponent {
-
+  @Input() formattingStyles!: { [klass: string]: any; };
 }

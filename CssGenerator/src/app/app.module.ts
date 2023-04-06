@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormattingTableComponent } from './formatting-table/formatting-table.component';
 import { FormattingPreviewComponent } from './formatting-preview/formatting-preview.component';
 import { GeneratedCssBoardComponent } from './generated-css-board/generated-css-board.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GeneratedCssBoardComponent } from './generated-css-board/generated-css-
     GeneratedCssBoardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

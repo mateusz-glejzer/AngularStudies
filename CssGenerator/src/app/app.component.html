@@ -1,3 +1,4 @@
-<app-formatting-table id="formattingTable"></app-formatting-table>
-<app-formatting-preview id="formattingPreview"></app-formatting-preview>
-<app-generated-css-board id="cssBoard"></app-generated-css-board>
+<app-formatting-table id="formattingTable"
+    (formattingPropsChanged)="addStyles($event)"></app-formatting-table>
+<app-formatting-preview [formattingStyles]="styles" id="formattingPreview"></app-formatting-preview>
+<app-generated-css-board [formattingStyles]="styles" id="cssBoard"></app-generated-css-board>

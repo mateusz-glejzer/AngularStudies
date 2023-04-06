@@ -1,13 +1,19 @@
 <p id="title">Podgląd formatowania</p>
 <div id="textLabel">
     <label for="textLabel">Pole Tekstowe</label>
-    <input type="text" id="textLabel">
+    <input class="element" type="text" id="textLabel"
+        [ngStyle]="formattingStyles">
 </div>
 <div id="buttonLabel">
     <label for="buttonLabel">Przycisk</label>
-    <input type="text" id="buttonLabel">
+    <button class="element" id="buttonLabel"
+        [ngStyle]="formattingStyles">Tekst
+        Przycisku</button>
 </div>
 <div id="htmlBlock">
     <label for="htmlBlock">Element Blokowy (np. div)</label>
-    <input type="text" id="htmlBlock">
+    <div [ngStyle]="formattingStyles" type="text" id="htmlBlock">Lorem ipsum dolor sit amet consectetur
+        adipisicing
+        elit. Error non natus recusandae numquam aspernatur facilis eveniet dicta. Molestias tempora corrupti
+        voluptatem, doloribus enim, sed ullam minima reiciendis nostrum cum assumenda!</div>
 </div>

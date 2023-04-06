@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FormattingTableComponentProps } from '../formatting-table/formatting-table.component';
+
 
 @Component({
   selector: 'app-formatting-preview',
@@ -6,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./formatting-preview.component.scss']
 })
 export class FormattingPreviewComponent {
-  textField!: string;
-  buttonText!: string;
-  blockElementHtml!: string;
+ @Input() formattingStyles!: { [klass: string]: any; };
 }
