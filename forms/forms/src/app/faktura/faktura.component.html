@@ -1,0 +1,40 @@
+<h2>Invoice</h2>
+<div [formGroup]="invoice">
+    <div formGroupName="issuer">
+        <div>
+            Name: <input type="text" formControlName="name">
+        </div>
+        <div>
+            City: <input type="text" formControlName="city">
+        </div>
+        <div>
+            Address: <input type="text" formControlName="address">
+        </div>
+        <div>
+            PostCode: <input type="text" formControlName="postCode">
+        </div>
+        <div>
+            Nip: <input type="text" formControlName="nip">
+        </div>
+        <div>
+            BankNumber: <input type="text" formControlName="bankNumber">
+        </div>
+    </div>
+    <div>
+        InvoiceId: <input type="text" formControlName="invoiceId">
+    </div>
+    <div>
+        IssueDate: <input type="date" formControlName="issueDate">
+    </div>
+    <div>
+        SaleDate: <input type="date" formControlName="saleDate">
+    </div>
+    <div>
+        PaymentDate: <input type="date" formControlName="paymentDate">
+    </div>
+    <div formGroupName="paymentMethod">
+    <select formControlName="paymentValue">
+        <option *ngFor="let method of paymentMethodEnum | keyvalue" [value]="method.value">{{ method.value }}</option>
+    </select>
+</div>
+</div>
